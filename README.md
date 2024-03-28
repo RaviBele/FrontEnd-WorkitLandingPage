@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/RaviBele/FrontEnd-WorkitLandingPage)
+- Live Site URL: [Netlify](https://bright-kleicha-0875d7.netlify.app/)
 
 ## My process
 
