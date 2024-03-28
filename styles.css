@@ -1,0 +1,579 @@
+@font-face {
+    font-family: Fraunces_144pt;
+    src: url(starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: manrope;
+    src: url(starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Fraunces_144pt;
+}
+
+p, a {
+    font-family: manrope;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.landing {
+    background-image: url(starter-code/assets/images/bg-pattern-1.svg), url(starter-code/assets/images/bg-pattern-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -11% 40%, 103% 71%;
+    position: relative;
+    background-color: #24053E;
+    min-height: 600px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5rem 10rem 0 10rem;
+}
+
+.header a {
+    color: white;
+    font-weight: 500;
+}
+
+.link_underline {
+    background-color: #44FFA1;
+    margin-top: 2px;
+    height: 2px;
+}
+
+.header-title {
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.header-title h1 {
+    max-width: 635px;
+    min-height: 160px;
+    padding: 0 30px;
+    margin: 0 auto;
+    color: white;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.header-title h1 span {
+    text-decoration: 3px underline #44FFA1;
+}
+
+.header-btn {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #44FFA1;
+    font-family: manrope;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+}
+
+.curve {
+    position: absolute;
+    top: 99.94%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 89px;
+}
+
+.curve .shape-fill {
+    fill: #24053E;
+}
+
+.hero-img {
+    display: block;
+    position: absolute;
+    width: 45%;
+    top: 75%;
+    left: 30%;
+    z-index: 2;
+}
+
+
+.content {
+    position: relative;
+    min-height: 600px;
+    background-color: #FCF8FF;
+}
+
+.curve .content-shape-fill {
+    fill: #FCF8FF;
+}
+
+.container {
+    padding-top: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.content-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+    margin: 0 20px;
+}
+
+.number {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #24053E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    padding: 1.4rem;
+}
+
+.number p {
+    font-size: 18px;
+    font-family: Fraunces_144pt;
+    color: #24053E;
+}
+
+.content-data {
+    text-align: center;
+}
+
+.content-data h3 {
+    padding: 1rem;
+    font-size: 2rem;
+    color: #24053E;
+}
+
+.content-data p {
+    font-size: 18px;
+    color: #584D62;
+    line-height: 1.7;
+}
+
+.founder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.founder {
+    width: 420px;
+}
+
+.about-founder {
+    background-color: #24053E;
+    color: white;
+    padding: 4rem;
+    display: inline-block;
+    max-width: 730px;
+    margin-top: 300px;
+    margin-left: -90px;
+    position: relative;
+}
+
+.about-founder h2 {
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.about-founder p {
+    line-height: 1.8;
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
+.about-founder button {
+    border: none;
+    background-color: #44FFA1;
+    padding: 1rem 1.25rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bg-pattern-3 {
+    position: absolute;
+    top: 72%;
+    left: 60%;
+}
+
+.footer {
+    margin-block: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    margin: 2rem
+}
+
+.social-link a {
+    display: inline-block;
+    margin: 1.6rem 0.7rem;
+}
+
+.header-link,
+.header-btn,
+.about-btn {
+    transition: all 4ms ease-in-out;
+}
+
+.header-link:hover {
+    color: #44FFA1;
+}
+
+.header-btn:hover,
+.about-btn:hover {
+    background-color: #24053E;
+    border: 2px solid #44FFA1;
+    color: #44FFA1;
+    cursor: pointer;
+}
+
+/* =================================================================
+
+Media Queries for Tablet Devices
+
+
+================================================================*/
+
+@media screen and (max-width: 1056px) {
+    .landing {
+        background-position: -28% 40%, 110% 71%;
+        min-height: 500px;
+    }
+
+    .header-title h1 {
+        max-width: 450px;
+        min-height: 100px;
+        font-size: 50px;
+    }
+    .hero-img {
+        top: 80%;
+        left: 28%;
+    }
+
+    .container {
+        width: 80%;
+        padding-top: 220px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .content-des {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+
+    .number {
+        width: 56px;
+        margin-bottom: 0rem;
+        margin: 0 2rem 0 0;
+    }
+
+    .content-data {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .content-data h3 {
+        padding:  0 0 1rem 0;
+        font-size: 1.75rem;
+        color: #24053E;
+    }
+
+    .content-data p {
+        font-size: 1rem;
+    }
+    
+    .founder-container {
+        margin-top: -100px;
+    }
+
+    .founder {
+        width: 281px;
+    }
+
+    .about-founder {
+        margin-top: 400px;
+        margin-left: -100px;
+        padding: 3rem;
+    }
+
+    .footer {
+        margin-block: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .landing {
+        background-position: -32% 40%, 110% 71%;
+        min-height: 500px;
+    }
+
+    .header {
+        padding: 2rem 2rem;
+    }
+
+
+    .header-title h1 {
+        max-width: 450px;
+        min-height: 100px;
+        font-size: 50px;
+    }
+
+    .hero-img {
+        top: 80%;
+        left: 28%;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .landing {
+        background-position: -38% 40%, 112% 71%;
+        min-height: 500px;
+    }
+
+    .bg-pattern-3 {
+        left: 60%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .landing {
+        background-position: -38% 40%, 112% 71%;
+        min-height: 500px;
+    }
+
+    .bg-pattern-3 {
+        top: 70%;
+        left: 50%;
+    }
+
+    .about-founder h2 {
+        font-size: 32px;
+    }
+
+    .about-founder p {
+        font-size: 1rem;
+    }
+
+    .about-founder button {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 672px) {
+    .landing {
+        background-position: -70% 40%, 120% 71%;
+        min-height: 500px;
+    }
+
+    .header-title h1 {
+        max-width: 450px;
+        min-height: 100px;
+        font-size: 50px;
+    }
+
+    .hero-img {
+        top: 82%;
+        left: 14%;
+        width: 70%;
+    }
+
+    .founder-container {
+        margin-top: -70px;
+    }
+
+    .bg-pattern-3 {
+        top: 68%;
+        left: 45%;
+    }
+
+    .about-founder {
+        margin-top: 350px;
+        margin-left: -100px;
+        padding: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .landing {
+        background-position: -91% 40%, 123% 71%;
+        min-height: 500px;
+    }
+
+    .bg-pattern-3 {
+        left: 35%;
+    }
+
+    .about-founder {
+        margin-top: 350px;
+        margin-left: -100px;
+    }
+
+    .about-founder h2 {
+        font-size: 24px;
+    }
+
+    .about-founder p {
+        font-size: 0.8rem;
+    }
+
+    .about-founder button {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .landing {
+        background-position: -110% 40%, 125% 71%;
+        min-height: 500px;
+    }
+
+    .bg-pattern-3 {
+        top: 70%;
+        left: 25%;
+    }
+
+    .about-founder {
+        margin-top: 350px;
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .landing {
+        background-position: -127% 40%, 125% 71%;
+        min-height: 500px;
+    }
+}
+
+/* =================================================================
+
+Media Queries for Mobile Devices
+
+
+================================================================*/
+
+
+@media screen and (max-width: 500px) {
+    .landing {
+        background-image: none;
+        min-height: 452px;
+    }
+
+    .header {
+        padding: 2rem 1rem 0 1rem;
+    }
+
+    .hero-img {
+        top: 87%;
+        left: 9%;
+        width: 80%;
+    }
+    
+    .content-des {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .container {
+        padding-top: 200px;
+        padding-bottom: 0px;
+    }
+
+    .content-data {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .number {
+        margin-bottom: 0rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .content-data h3 {
+        padding:  0 0 1rem 0;
+        font-size: 1.75rem;
+        color: #24053E;
+    }
+
+    .bg-pattern-3 {
+        display: none;
+    }
+    .founder-container {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .about-founder {
+        margin-top: -50px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .about-founder h2 {
+        font-size: 32px;
+    }
+
+    .about-founder p {
+        font-size: 1rem;
+    }
+
+    .about-founder button {
+        font-size: 1rem;
+    }
+
+    .footer {
+        margin-block: 4rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding-top: 160px;
+    }
+
+    .about-founder p {
+        font-size: 0.9rem;
+    }
+}
